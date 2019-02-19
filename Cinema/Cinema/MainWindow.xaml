@@ -7,7 +7,22 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="600" Width="1080" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Background="#1C1E23">
+        <Grid Height="30">
+            <TextBlock Text="vCinema" FontFamily="Raleway" Foreground="White" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Height="30" Width="30" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Padding="0">
+                <materialDesign:PackIcon Kind="Power" Height="30" Width="30" Foreground="White"/>
+            </Button>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Height="45">
+            <Button x:Name="Btn_AddRow" Content="Add Row" Width="500" FontFamily="Raleway" FontSize="20" Margin="30 0 10 0" Click="Btn_AddRow_Click"/>
+            <Button x:Name="Btn_AddColumn" Content="Add Column" Width="500" FontFamily="Raleway" FontSize="20" Margin="10 0 10 0" Grid.Column="1" Click="Btn_AddColumn_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="45">
+            <Button x:Name="Btn_RemoveRow" Content="Remove Row" Width="500" FontFamily="Raleway" FontSize="20" Margin="30 0 10 0" Grid.Row="1" Grid.Column="0" Click="Btn_RemoveRow_Click"/>
+            <Button x:Name="Btn_RemoveColumn" Content="RemoveColumn" Width="500" FontFamily="Raleway" FontSize="20" Margin="10 0 10 0" Grid.Row="1" Grid.Column="1" Click="Btn_RemoveColumn_Click"/>
+        </StackPanel>
+        <StackPanel Height="20"/>
+        <Grid x:Name="_Room_Grid" Height="460"/>
+    </StackPanel>
 </Window>
