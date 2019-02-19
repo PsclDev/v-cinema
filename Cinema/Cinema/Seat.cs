@@ -8,20 +8,22 @@ namespace Cinema
     {
         public Seat() : base()
         {
-            Background = Brushes.Green;
+            FontFamily = new FontFamily("Raleway");
+            Foreground = Brushes.Black;
+            Background = Brushes.Lime;
             Margin = new System.Windows.Thickness(5);
             Click += toggleColor;
         }
 
         public void toggleColor(object sender, RoutedEventArgs e)
         {
-            if (Background == Brushes.Green)
+            if (Background == Brushes.Lime)
             {
-                Background = Brushes.Red;
+                Background = Brushes.IndianRed;
             }
             else
             {
-                Background = Brushes.Green;
+                Background = Brushes.Lime;
             }
         }
     }
