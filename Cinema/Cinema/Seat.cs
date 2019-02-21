@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using MaterialDesignThemes;
 
 namespace Cinema
 {
@@ -8,6 +9,8 @@ namespace Cinema
     {
         public Seat() : base()
         {
+            Style myStyle = (Style)Resources["MaterialDesignRaisedButton"];
+            Style = myStyle;
             FontFamily = new FontFamily("Raleway");
             Foreground = Brushes.Black;
             Background = Brushes.Lime;

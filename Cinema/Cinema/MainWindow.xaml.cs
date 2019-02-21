@@ -10,8 +10,8 @@ namespace Cinema
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const int ROWS = 3;
-        private const int COLUMNS = 4;
+        private const int ROWS = 4;
+        private const int COLUMNS = 5;
         private List<List<Seat>> room2 = new List<List<Seat>>();
         private Room room;
 
