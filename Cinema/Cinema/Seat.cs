@@ -9,8 +9,7 @@ namespace Cinema
     {
         public Seat() : base()
         {
-            Style myStyle = (Style)Resources["MaterialDesignRaisedButton"];
-            Style = myStyle;
+            Style = (Style)Resources["MaterialDesignRaisedButton"];
             FontFamily = new FontFamily("Raleway");
             Foreground = Brushes.Black;
             Background = Brushes.Lime;
